@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalise.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent">
+        <nav id="navbar" class="container justify-content-between align-items-center pt-2">
+            <div id="menu" class="menu">
+                <img id="menu-img" src="img/menu-dark.png" alt="">
+            </div>
+            <div class="logo">
+                <img id="logo-dark" src="img/logo-dark.png" alt="">
+            </div>
+           
+
+                <ul id="nav-ul" class="nav-ul d-flex align-items-center ">
+                    <div class="d-flex justify-content-between align-items-center mb-5">
+                        <img src="img/logo-dark.png" class="mobile-logo" id="mobile-logo" alt="">
+                        <i id="mobile-arrow" class="fa-solid fa-arrow-right mobile-arrow"></i>
+                    </div>
+        
+                    <li>
+                        <a  class="navbar-a-mobile" style="color: #243261;" href="index.html">
+                            <img class="img-ul-mobile ml-2" src="img/house.png" alt="">
+                            الرئيسية
+                        </a>
+                    </li>
+                    <li>                              
+                        <a class="navbar-a-mobile" style="color: #243261;" href="">
+                        <img class="img-ul-mobile ml-2" src="img/inter.png" alt="">
+                        من نحن
+                    </a></li>
+                    <li>
+                        <a class="navbar-a-mobile" style="color: #243261;" href="price.html">
+                            <img class="img-ul-mobile ml-2" src="img/crow.png" alt="">
+                            الباقات
+                        </a>
+                    </li>
+                    <li>
+                        <a class="navbar-a-mobile" style="color: #243261;" href="">
+                            <img class="img-ul-mobile ml-2" src="img/contact.png" alt="">
+                            تواصل معنا
+                        </a>
+                    </li>
+                    <li  class="li-login" id="li-login">
+                        <a  href="">
+                            <img class="img-ul-mobile ml-2" src="img/login.png" alt="">
+                            تسجيل الدخول
+                        </a>
+                    </li>
+                </ul>
+
+           
+
+            
+            <div class="content-nav d-flex align-items-center gap-5 ">
+ 
+                <a   href="#" class="login d-flex  gap-2">
+                    <i id="login-i" style="color: #566AED;" class="fa-regular fa-user login-i"></i>
+                    <h2 id="login-h2" style="color: #243261;" class="login-h2">تسجيل الدخول</h2>
+                </a>
+                <div class="">
+                    <button class="btn btn-acc dn">افتح حسابك المجاني الأن</button>
+                </div>
+
+            </div>
+           
+
+        </nav>
+
+        <div class="prices container  ">
+            <div class="price-titles text-center">
+                <h2>الباقات والأسعار</h2>
+                <p>توفر لدينا مجموعة واسعة من الباقات المتنوعة التي تلبي احتياجاتك الفردية وتتوافق مع ميزانيتك .</p>
+
+            </div>
+            <table>
+                <div class="row">
+                    <div class="col-lg-3 mt-7">
+       
+                        <h1 class="title-price">المهام الرئيسية</h1>
+                        <ul class="ul-price">
+                            <li class="mb-3">التحضير والغياب</li>
+                            <li class="mb-3">الرواتب</li>
+                            <li class="mb-3">العمولات</li>
+                            <li class="mb-3">تطبيق الخدمة الذاتية</li>
+                            <li class="mb-3">التعريف والخطابات</li>
+                            <li class="mb-3">التقييم السنوي</li>
+                            <li class="mb-3">مكافئات الموظفين</li>
+                            <li class="mb-3">الاجازات</li>
+                        </ul>
+                        <h1 class="title-price">المستخدمين</h1>
+                        <ul class="ul-price">
+                            <li class="num">عدد الموظفين</li>
+                            <li class="num">عدد المستخدمين</li>
+                        </ul>
+                        <h1 class="title-price">الرسوم</h1>
+                        <ul class="ul-price ry">
+                            <li class="riyal-li">رسوم التأسيس <span>تدفع مرة واحدة</span></li>
+                            <li class="riyal-li">رسوم صيانة <span>تدفع سنويآ</span></li>
+                
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="box-price text-center">
+                            <h1 class="price-category">الاساسية</h1>
+                            <br>
+                            <ul class="">
+                               <li class="yes-no mt-4"><img src="img/yes.png" alt=""></li> 
+                               <li class="yes-no"><img src="img/yes.png" alt=""></li>
+                                
+                               <li class="yes-no"><img src="img/no.png" alt=""></li> 
+                               <li class="yes-no"><img src="img/no.png" alt=""></li> 
+                               <li class="yes-no"><img src="img/no.png" alt=""></li> 
+                               <li class="yes-no"><img src="img/no.png" alt=""></li> 
+                               <li class="yes-no"><img src="img/no.png" alt=""></li> 
+                               <li class="yes-no"><img src="img/no.png" alt=""></li> 
+
+                    
+       
+                
+                            </ul>
+                            <br>
+                            <br>
+                            <ul class="ul-num">
+                                <li class="li-num">10 موظفين</li> 
+                                <li class="li-num">مستخدم واحد</li>
+                             </ul>
+                             <br>
+                             <br>
+                             <ul class="">
+                                <li class="riyal">4999 ريال</li> 
+                                <li class="riyal">299 ريال</li>
+                             </ul>
+                             <div class=" d-flex align-items-center justify-content-center">
+                                <button class="btn strt align-items-center mb-3 justify-content-center gap-3">
+                                    أبداء مع ــــــوسق الأن
+                                    
+                                </button>
+                            </div>
+
+                
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="box-price-no more text-center">
+                            <h1 class="price-category">الاحترافية</h1>
+                            <br>
+                            <ul class="">
+                               <li class="yes-no mt-4"><img src="img/yes.png" alt=""></li> 
+                               <li class="yes-no"><img src="img/yes.png" alt=""></li>
+                                
+                               <li class="yes-no"><img src="img/yes.png" alt=""></li> 
+                               <li class="yes-no"><img src="img/yes.png" alt=""></li> 
+                               <li class="yes-no"><img src="img/yes.png" alt=""></li> 
+                               <li class="yes-no"><img src="img/yes.png" alt=""></li> 
+                               <li class="yes-no"><img src="img/yes.png" alt=""></li> 
+                               <li class="yes-no"><img src="img/yes.png" alt=""></li> 
+
+                    
+       
+                
+                            </ul>
+                            <br>
+                            <br>
+                            <ul class="ul-num">
+                                <li class="li-num">100 موظفين</li>
+                                <li class="li-num">5 مستخدمين</li>
+                             </ul>
+                             <br>
+                             <br>
+                             <ul class="">
+                                <li class="riyal">9999 ريال</li> 
+                                <li class="riyal">499 ريال</li>
+                             </ul>
+                             <div class=" d-flex align-items-center justify-content-center">
+                                <button class="btn strt align-items-center mb-3 justify-content-center gap-3">
+                                    أبداء مع ــــــوسق الأن
+                                    
+                                </button>
+                            </div>
+
+                
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="box-price text-center">
+                            <h1 class="price-category">المتقدمة</h1>
+                            <br>
+                            <ul class="">
+                               <li class="yes-no mt-4"><img src="img/yes.png" alt=""></li> 
+                               <li class="yes-no"><img src="img/yes.png" alt=""></li>
+                                
+                               <li class="yes-no"><img src="img/yes.png" alt=""></li> 
+                               <li class="yes-no"><img src="img/yes.png" alt=""></li> 
+                               <li class="yes-no"><img src="img/yes.png" alt=""></li> 
+                               <li class="yes-no"><img src="img/yes.png" alt=""></li> 
+                               <li class="yes-no"><img src="img/yes.png" alt=""></li> 
+                               <li class="yes-no"><img src="img/yes.png" alt=""></li> 
+
+                    
+       
+                
+                            </ul>
+                            <br>
+                            <br>
+                            <ul class="ul-num">
+                                <li class="li-num">200 موظفين</li> 
+                                <li class="li-num">20 مستخدم</li>
+                             </ul>
+                             <br>
+                             <br>
+                             <ul class="">
+                                <li class="riyal">14999 ريال</li>
+                                <li class="riyal">999 ريال</li>
+                             </ul>
+                             <div class=" d-flex align-items-center justify-content-center">
+                                <button class="btn strt align-items-center mb-3 justify-content-center gap-3">
+                                    أبداء مع ــــــوسق الأن
+                                   
+                                </button>
+                            </div>
+
+                
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </table>
+ 
+     
+
+        </div>
+        <div  class="prices-med mt-15 ">
+            <div class="price-titles container text-center">
+                <h2>الباقات والأسعار</h2>
+                <p>توفر لدينا مجموعة واسعة من الباقات المتنوعة التي تلبي احتياجاتك الفردية وتتوافق مع ميزانيتك .</p>
+
+            </div>
+            <div id="prices-med" class="start-ctg ">
+                <div class="ctg d-flex justify-content-center align-items-center ">
+                    <div class="ctg-box">
+                        <h2>الاساسية</h2>
+    
+                    </div>
+                    <div class="ctg-box pro">
+                        <h2>الاحترافية</h2>
+    
+                    </div>
+                    <div class="ctg-box">
+                        <h2>المتقدمة</h2>
+    
+                    </div>
+                </div>
+                <div class="start-boxs d-flex justify-content-center align-items-center">
+                    <div class="box-start">
+                        <button class="btn start-btn">ابدأ الآن</button>
+                    </div>
+                    <div class="box-start">
+                        <button class="btn start-btn">ابدأ الآن</button>
+                    </div>
+                    <div class="box-start">
+                        <button class="btn start-btn">ابدأ الآن</button>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="price-m-one">
+                <div class="div-m-title mt-4">
+                    <h2 class="price-m-title ">المهام الرئيسية</h2>
+
+                </div>
+
+                <div class="price-m-box">
+                    <h2 class="table-h2">التحضير والغياب</h2>
+                    <div class="box-table d-flex align-items-center justify-content-center">
+                        <div class="table-one">
+                            <img src="img/yes.png" alt="">
+                        </div>
+                        <div class="table-one">
+                            <img src="img/yes.png" alt="">
+                        </div>
+                        <div class="table-one">
+                            <img src="img/yes.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="price-m-box">
+                    <h2 class="table-h2">الرواتب</h2>
+                    <div class="box-table d-flex align-items-center justify-content-center">
+                        <div class="table-one">
+                            <img src="img/yes.png" alt="">
+                        </div>
+                        <div class="table-one">
+                            <img src="img/yes.png" alt="">
+                        </div>
+                        <div class="table-one">
+                            <img src="img/yes.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="price-m-box">
+                    <h2 class="table-h2">العمولات</h2>
+                    <div class="box-table d-flex align-items-center justify-content-center">
+                        <div class="table-one">
+                            <img src="img/no.png" alt="">
+                        </div>
+                        <div class="table-one">
+                            <img src="img/yes.png" alt="">
+                        </div>
+                        <div class="table-one">
+                            <img src="img/yes.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="price-m-box">
+                    <h2 class="table-h2">تطبيق الخدمة الذاتية</h2>
+                    <div class="box-table d-flex align-items-center justify-content-center">
+                        <div class="table-one">
+                            <img src="img/no.png" alt="">
+                        </div>
+                        <div class="table-one">
+                            <img src="img/yes.png" alt="">
+                        </div>
+                        <div class="table-one">
+                            <img src="img/yes.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="price-m-box">
+                    <h2 class="table-h2">التعريف والخطابات</h2>
+                    <div class="box-table d-flex align-items-center justify-content-center">
+                        <div class="table-one">
+                            <img src="img/no.png" alt="">
+                        </div>
+                        <div class="table-one">
+                            <img src="img/yes.png" alt="">
+                        </div>
+                        <div class="table-one">
+                            <img src="img/yes.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="price-m-box">
+                    <h2 class="table-h2">التقييم السنوي</h2>
+                    <div class="box-table d-flex align-items-center justify-content-center">
+                        <div class="table-one">
+                            <img src="img/no.png" alt="">
+                        </div>
+                        <div class="table-one">
+                            <img src="img/yes.png" alt="">
+                        </div>
+                        <div class="table-one">
+                            <img src="img/yes.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="price-m-box">
+                    <h2 class="table-h2">مكافئات الموظفين</h2>
+                    <div class="box-table d-flex align-items-center justify-content-center">
+                        <div class="table-one">
+                            <img src="img/no.png" alt="">
+                        </div>
+                        <div class="table-one">
+                            <img src="img/yes.png" alt="">
+                        </div>
+                        <div class="table-one">
+                            <img src="img/yes.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="price-m-box">
+                    <h2 class="table-h2">الاجازات</h2>
+                    <div class="box-table d-flex align-items-center justify-content-center">
+                        <div class="table-one">
+                            <img src="img/no.png" alt="">
+                        </div>
+                        <div class="table-one">
+                            <img src="img/yes.png" alt="">
+                        </div>
+                        <div class="table-one">
+                            <img src="img/yes.png" alt="">
+                        </div>
+                    </div>
+                </div>
+              
+                
+
+            </div>
+            <div class="price-m-two">
+                <div class="div-m-title mt-4">
+                    <h2 class="price-m-title ">المستخدمين</h2>
+
+                </div>
+
+                <div class="price-m-box">
+                    <h2 class="table-h2">عدد الموظفين</h2>
+                    <div class="box-table d-flex align-items-center justify-content-center">
+                        <div class="table-one">
+                            <p>10 موظفين</p>
+                        </div>
+                        <div class="table-one">
+                            <p>100 موظفين</p>
+                        </div>
+                        <div class="table-one">
+                            <p>200 موظفين</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-m-box">
+                    <h2 class="table-h2">عدد المستخدمين</h2>
+                    <div class="box-table d-flex align-items-center justify-content-center">
+                        <div class="table-one">
+                            <p>مستخدم واحد</p>
+                        </div>
+                        <div class="table-one">
+                            <p>5 مستخدمين</p>
+                        </div>
+                        <div class="table-one">
+                            <p>20 مستخدم</p>
+                        </div>
+                    </div>
+                </div>
+  
+              
+                
+
+            </div>
+            <div class="price-m-three">
+                <div class="div-m-title mt-4">
+                    <h2 class="price-m-title ">الرسوم</h2>
+
+                </div>
+
+                <div class="price-m-box">
+                    <h2 class="table-h2">رسوم التأسيس <span>تدفع مرة واحدة</span></h2>
+                    <div class="box-table d-flex align-items-center justify-content-center">
+                        <div class="table-one">
+                            <h4>4999 ريال</h4>
+                        </div>
+                        <div class="table-one">
+                            <h4>9999 ريال</h4>
+                        </div>
+                        <div class="table-one">
+                            <h4>14999 ريال</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-m-box">
+                    <h2 class="table-h2">رسوم صيانة <span>تدفع سنويآ</span></h2>
+                    <div class="box-table d-flex align-items-center justify-content-center">
+                        <div class="table-one">
+                            <h4>299 ريال</h4>
+                        </div>
+                        <div class="table-one">
+                            <h4>499 ريال</h4>
+                        </div>
+                        <div class="table-one">
+                            <h4>999 ريال</h4>
+                        </div>
+                    </div>
+                </div>
+  
+              
+                
+
+            </div>
+ 
+
+
+        </div>
+        <div class="question container mt-5">
+            <div class="row">
+                <div class="col-lg-2 ques-p-col ">
+                    <p class="ques-p">الاسئلة الشائعة</p>
+
+                </div>
+                <div class="col-lg-10">
+                    <div class="ques-boxs">
+                        <div style="border-left: none;border-right: none;" class="ques-box card card-body">
+                            
+                            <div  class="d-flex justify-content-between align-items-center">
+                                <h2 class="colapse-h2">هل لديكم حساب تجريبي؟</h2>
+                                <a id="plusbtn" class="" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                  <img id="img-cl" src="img/plus.png" alt="">
+                                </a>
+        
+                              </div>
+                              <div class="collapse" id="collapseExample">
+                                <p class="colapse-p">
+                                    نعم، بامكانك انشاء حساب  تجريبي لمدة 7 ايام وتجربة المنصة من                     
+                                        <button class=" p-2 btn-2 btn-acc-3 align-items-center justify-content-center ">
+                                            افتح حسابك التجريبي الأن
+                                            <i class="fa-solid fa-arrow-left"></i>
+                                        </button>
+                                    </div>
+                        </div>
+        
+                        <div style="border-left: none;border-right: none;" class="ques-box card card-body">
+                            
+                            <div  class="d-flex justify-content-between align-items-center">
+                                <h2 class="colapse-h2"> كيف يمكنني اختيار  الباقة المناسبة لشركتي؟</h2>
+                                <a id="plusbtn1" class="" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+                                  <img id="img-cl1" src="img/plus.png" alt="">
+                                </a>
+        
+                              </div>
+                              <div class="collapse" id="collapseExample1">
+                                <p class="colapse-p">
+                                    يعتمد على عدد الموظفين والعمليات اليومية الروتينية، لدينا 3 باقات حسب عدد الموظفين لكل شركة.                     </p>
+                              </div>
+                        </div>
+                        <div style="border-left: none;border-right: none;" class="ques-box card card-body">
+                            
+                            <div  class="d-flex justify-content-between align-items-center">
+                                <h2 class="colapse-h2">هل يمكني تخصيص الباقة حس الاحتياج؟</h2>
+                                <a id="plusbtn2" class="" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                                  <img id="img-cl2" src="img/plus.png" alt="">
+                                </a>
+        
+                              </div>
+                              <div class="collapse" id="collapseExample2">
+                                <p class="colapse-p">
+                                    لا، هناك 3 باقات نعتقد انها مناسبة حسب عدد الموظفين.                       </p>
+                              </div>
+                        </div>
+                        <div style="border-left: none;border-right: none;" class="ques-box card card-body">
+                            
+                            <div  class="d-flex justify-content-between align-items-center">
+                                <h2 class="colapse-h2">هل يمكنن ترقية الباقة  مستقبلا؟</h2>
+                                <a id="plusbtn3" class="" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+                                  <img id="img-cl3"  src="img/plus.png" alt="">
+                                </a>
+        
+                              </div>
+                              <div class="collapse" id="collapseExample3">
+                                <p class="colapse-p">
+                                    نعم ،وستقوم بدفع الفرق  بين الباقتين.                       </p>
+                              </div>
+                        </div>
+                        <div style="border-left: none;border-right: none;" class="ques-box card card-body">
+                            
+                            <div  class="d-flex justify-content-between align-items-center">
+                                <h2 class="colapse-h2">ماهي سياسة الالغاء والا سترجاع بعد الشراء؟</h2>
+                                <a id="plusbtn4" class="" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+                                  <img id="img-cl4" src="img/plus.png" alt="">
+                                </a>
+        
+                              </div>
+                              <div class="collapse" id="collapseExample4">
+                                <p class="colapse-p">
+                                    بامكانك تجربة المنصة لمدة 7 ايام  قبل شراء الباقة.                      </p>
+                              </div>
+                        </div>
+                        <div style="border-left: none;border-right: none;" class="ques-box card card-body">
+                            
+                            <div  class="d-flex justify-content-between align-items-center">
+                                <h2 class="colapse-h2">في حال لدي اقتراح للمنصة كيف يتم التعامل معه؟</h2>
+                                <a id="plusbtn5" class="" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
+                                  <img id="img-cl5" src="img/plus.png" alt="">
+                                </a>
+        
+                              </div>
+                              <div class="collapse" id="collapseExample5">
+                                <p class="colapse-p">
+                                    يمكنك اضافة الاقتراح في خانة الاقتراحات وسيتم  تنفيذ مجاناً  في حال اعتماده .                       </p>
+                              </div>
+                        </div>
+                        <div style="border-left: none;border-right: none;" class="ques-box card card-body">
+                            
+                            <div  class="d-flex justify-content-between align-items-center">
+                                <h2 class="colapse-h2">لدي اكثر من شركة كيف يتم التعامل معي؟</h2>
+                                <a id="plusbtn6" class="" data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6">
+                                  <img id="img-cl6" src="img/plus.png" alt="">
+                                </a>
+        
+                              </div>
+                              <div class="collapse" id="collapseExample6">
+                                <p class="colapse-p">
+                                    بامكانك فتح حساب لكل شركة وسيكون  حساب  كل  شركة مستقل عن الاخر.                      </p>
+                              </div>
+                        </div>
+                        <div style="border-left: none;border-right: none;" class="ques-box card card-body">
+                            
+                            <div  class="d-flex justify-content-between align-items-center">
+                                <h2 class="colapse-h2">ماهي الخدمة الذاتية؟</h2>
+                                <a id="plusbtn7" class="" data-bs-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample7">
+                                  <img id="img-cl7" src="img/plus.png" alt="">
+                                </a>
+        
+                              </div>
+                              <div class="collapse" id="collapseExample7">
+                                <p class="colapse-p">
+                                    تطبيق للموظفين لتسجيل الحضور والاستئذان وتقديم طلبات الاجازة ومعاملاتهم واستعراض مسيراتهم                      </p>
+                              </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+
+
+
+             
+        </div>
+ 
+ 
+
+
+ 
+        <div class="begin container d-flex justify-content-between align-items-center p-5">
+            <h1>ارفع نسب الإنجاز في إدارتك الآن<br>
+                ابدأ الآن مع وسق
+                
+            </h1>
+            <div class="btn-begin">
+                <button>ابدأ باستخدام وسق الان !</button>
+
+            </div>
+            
+        </div>
+
+
+        <div class="footer ">
+            <div class="container">
+                <div class="logo-footer">
+                    <img class="mb-5 mt-15" src="img/logo-footer.png" alt="">
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 col-xs-6 mb-4">
+                        <p class="title-footer">الشــــــركة</p>
+                        <a href="#" class="d-block">من نحن</a>
+                        <a href="price.html" class="d-block">الباقات</a>
+                        <a href="#" class="d-block">تواصل معنا</a>
+                        <a href="#" class="d-block">المساعدة</a>
+    
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-xs-6 mb-4">
+                        <p class="title-footer">سياساتنا</p>
+                        <a href="#" class="d-block">شروط الاستخدام</a>
+                        <a href="#" class="d-block">سياسة الخصوصية</a>
+                        <a href="#" class="d-block">الحماية والامان</a>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 col-xs-12">
+                        <p class="title-footer">تواصل معنا</p>
+                        <div class="call d-flex align-items-center gap-2">
+                            <img src="img/call.png" alt="">
+                            <p class="alix">+966 2343 23523 35</p>
+                        </div>
+                        <div class="message d-flex align-items-center gap-2">
+                            <img src="img/message2.png" alt="">
+                            <p class="alix">info@gmail.com</p>
+                        </div>
+                        <div class="icons">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_9_721)">
+                                <path d="M15.0956 3.74805H15.2625C16.8038 3.75367 24.6131 3.80992 26.7188 4.37617C27.3553 4.54899 27.9353 4.88584 28.4009 5.35306C28.8665 5.82029 29.2013 6.40152 29.3719 7.03867C29.5613 7.75117 29.6944 8.6943 29.7844 9.66742L29.8031 9.86242L29.8444 10.3499L29.8594 10.5449C29.9813 12.2587 29.9963 13.8637 29.9981 14.2143V14.3549C29.9963 14.7187 29.9794 16.4324 29.8444 18.2174L29.8294 18.4143L29.8125 18.6093C29.7188 19.6818 29.58 20.7468 29.3719 21.5305C29.2018 22.168 28.8672 22.7495 28.4015 23.2168C27.9359 23.6841 27.3556 24.0207 26.7188 24.193C24.5438 24.778 16.2769 24.8193 15.1313 24.8212H14.865C14.2856 24.8212 11.8894 24.8099 9.37688 24.7237L9.05813 24.7124L8.895 24.7049L8.57438 24.6918L8.25375 24.6787C6.1725 24.5868 4.19063 24.4387 3.2775 24.1912C2.64092 24.019 2.06075 23.6826 1.59511 23.2157C1.12947 22.7487 0.794713 22.1676 0.624375 21.5305C0.41625 20.7487 0.2775 19.6818 0.18375 18.6093L0.16875 18.4124L0.15375 18.2174C0.0612142 16.9469 0.00993725 15.6737 0 14.3999L0 14.1693C0.00375 13.7662 0.01875 12.373 0.12 10.8355L0.133125 10.6424L0.13875 10.5449L0.15375 10.3499L0.195 9.86242L0.21375 9.66742C0.30375 8.6943 0.436875 7.7493 0.62625 7.03867C0.796301 6.40126 1.13093 5.81975 1.59659 5.35245C2.06225 4.88515 2.64257 4.54847 3.27938 4.37617C4.1925 4.13242 6.17438 3.98242 8.25563 3.88867L8.57438 3.87555L8.89688 3.8643L9.05813 3.85867L9.37875 3.84555C11.1632 3.78812 12.9484 3.75625 14.7338 3.74992H15.0956V3.74805ZM12 9.7668V18.8005L19.7944 14.2855L12 9.7668Z" fill="#566AED"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_9_721">
+                                <rect width="30" height="30" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                                    
+                            <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.3453 26.2994C12.9074 26.2994 11.948 25.6203 11.0913 25.0222C10.4823 24.5908 9.91196 24.1812 9.23892 24.0676C8.91847 24.0124 8.59377 23.9857 8.26863 23.9878C7.69829 23.9878 7.24517 24.0736 6.92254 24.1389C6.71713 24.1751 6.54554 24.209 6.41021 24.209C6.27004 24.209 6.09242 24.1703 6.02354 23.9335C5.96313 23.7401 5.92567 23.5565 5.88821 23.3788C5.79154 22.9317 5.71058 22.6575 5.54262 22.6297C3.74342 22.3554 2.66679 21.9409 2.45654 21.4503C2.43962 21.3972 2.41908 21.3416 2.41908 21.2993C2.407 21.1495 2.51575 21.025 2.66679 20.9972C4.09383 20.7616 5.37587 20.0015 6.45854 18.7521C7.29954 17.7818 7.70917 16.8442 7.74662 16.7427C7.74662 16.7306 7.7575 16.7306 7.7575 16.7306C7.96292 16.3065 8.00521 15.9452 7.88075 15.6491C7.64875 15.0933 6.88387 14.8565 6.36188 14.6945C6.22775 14.6583 6.11417 14.6148 6.0175 14.5822C5.57042 14.4045 4.82608 14.0263 4.92396 13.5043C4.99404 13.1273 5.49429 12.8579 5.90392 12.8579C6.0175 12.8579 6.11417 12.8748 6.19392 12.9183C6.65308 13.1273 7.06754 13.2349 7.42279 13.2349C7.86504 13.2349 8.07529 13.0681 8.12846 13.015C8.11721 12.776 8.10311 12.5371 8.08617 12.2984C7.97742 10.649 7.85417 8.60212 8.37617 7.42883C9.94458 3.91621 13.2735 3.63467 14.2595 3.63467L14.6897 3.625H14.7501C15.7349 3.625 19.0639 3.89929 20.6323 7.41796C21.1603 8.59125 21.031 10.6442 20.9223 12.2875L20.9114 12.3685C20.9018 12.5884 20.8848 12.7987 20.8752 13.015C20.9283 13.0572 21.1217 13.2192 21.5204 13.224C21.866 13.2143 22.243 13.1007 22.6732 12.9062C22.7923 12.8547 22.9204 12.8276 23.0502 12.8265C23.2012 12.8265 23.3523 12.8627 23.4815 12.9062H23.4924C23.8537 13.0415 24.0905 13.2941 24.0905 13.5587C24.1014 13.8064 23.9069 14.1834 22.9861 14.5556C22.8895 14.5918 22.7759 14.6365 22.6418 14.668C22.1294 14.825 21.3645 15.0727 21.1217 15.6225C20.9875 15.9125 21.0407 16.2847 21.2461 16.7052C21.2461 16.7149 21.257 16.7149 21.257 16.7149C21.3162 16.8659 22.8725 20.4003 26.3368 20.9767C26.4076 20.9886 26.4717 21.0258 26.5173 21.0813C26.5628 21.1368 26.5867 21.207 26.5845 21.2787C26.5854 21.333 26.5725 21.3866 26.5471 21.4346C26.3368 21.93 25.2699 22.3336 23.4598 22.614C23.293 22.6405 23.2121 22.916 23.1154 23.3631C23.0771 23.5495 23.0323 23.7345 22.9813 23.9177C22.9269 24.0954 22.8133 24.192 22.6188 24.192H22.5934C22.4211 24.1887 22.2496 24.1688 22.0811 24.1328C21.6382 24.0385 21.1866 23.9915 20.7338 23.9927C20.4091 23.9934 20.085 24.0205 19.7647 24.0736C19.0965 24.1824 18.5201 24.5968 17.9111 25.0282C17.0435 25.6203 16.0793 26.2994 14.6523 26.2994H14.3453Z" fill="#566AED"/>
+                                </svg>
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27.5 7.24977C26.5604 7.65739 25.5668 7.92685 24.55 8.04977C25.6227 7.40892 26.4266 6.40075 26.8125 5.21227C25.8044 5.81235 24.701 6.23514 23.55 6.46227C22.7807 5.62799 21.7562 5.07264 20.6373 4.88334C19.5183 4.69403 18.3682 4.88147 17.3672 5.41626C16.3663 5.95105 15.5712 6.80294 15.1066 7.83832C14.6419 8.8737 14.5341 10.034 14.8 11.1373C12.7618 11.0342 10.7681 10.5035 8.94832 9.5796C7.12859 8.65574 5.52356 7.35939 4.2375 5.77477C3.78642 6.56248 3.5494 7.45455 3.55 8.36227C3.5484 9.20525 3.75527 10.0355 4.15219 10.7792C4.54912 11.5229 5.12377 12.1569 5.825 12.6248C5.00997 12.6026 4.21236 12.3839 3.5 11.9873V12.0498C3.50611 13.2309 3.91999 14.3736 4.67164 15.2847C5.42329 16.1958 6.46657 16.8193 7.625 17.0498C7.17907 17.1855 6.71609 17.257 6.25 17.2623C5.92736 17.2585 5.60553 17.2292 5.2875 17.1748C5.61739 18.1908 6.25578 19.0787 7.11384 19.715C7.97191 20.3512 9.00697 20.7042 10.075 20.7248C8.2715 22.1439 6.04485 22.9183 3.75 22.9248C3.33217 22.9261 2.91467 22.9011 2.5 22.8498C4.84304 24.3626 7.57352 25.1657 10.3625 25.1623C12.2871 25.1823 14.1964 24.8185 15.9789 24.0924C17.7614 23.3662 19.3813 22.2921 20.744 20.9329C22.1067 19.5737 23.185 17.9565 23.9157 16.1759C24.6464 14.3953 25.015 12.4869 25 10.5623V9.89977C25.9809 9.16829 26.8268 8.27155 27.5 7.24977Z" fill="#566AED"/>
+                                </svg>
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_9_726)">
+                                    <path d="M27.5646 2.6615L0.985958 12.9638C-0.0836123 13.4436 -0.44537 14.4043 0.727442 14.9258L7.546 17.1039L24.0324 6.86227C24.9326 6.21932 25.8541 6.39076 25.0611 7.09805L10.9015 19.9849L10.4568 25.4385C10.8687 26.2806 11.6231 26.2845 12.1042 25.866L16.0217 22.1401L22.731 27.1901C24.2893 28.1174 25.1372 27.519 25.4725 25.8193L29.8731 4.87383C30.3301 2.78174 29.5509 1.85994 27.5646 2.6615Z" fill="#566AED"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_9_726">
+                                    <rect width="30" height="30" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                                    
+                        </div>
+                    </div>
+                    <hr class="hr " style="color: #3B4E89;">
+                    <p class="titre-p Copyright">جميع الحقوق محفوظة ©2023 لـمنصة وسق</p>
+                </div>
+ 
+
+            </div>
+
+
+        </div>
+        <div class="whats">
+           <a href="#"><img class="img-fluid " src="img/whatsapp.png" alt=""></a> 
+        </div>
+
+
+        
+
+
+    </div>
+   
+
+
+ 
+    
+       
+       
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+      
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+       <script src="main-price.js"></script>
+</body>
+</html>
